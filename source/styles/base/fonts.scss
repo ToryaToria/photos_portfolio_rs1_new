@@ -1,0 +1,45 @@
+/* ===================== шрифты. подключение =============== */
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../../fonts//inter_cyrillic-regular.woff2") format("woff2"),
+    url("../../fonts/inter_cyrillic-regular.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src:
+     url("../../fonts/Merriweather-Bold.woff2") format("woff2"),
+    url("../../fonts/Merriweather-Bold.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../../fonts/inter_cyrillic-regular.woff2") format("woff2"),
+    url("../../fonts/inter_cyrillic-regular.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url("../../fonts/inter_cyrillic-700.woff2") format("woff2"),
+    url("../../fonts/inter_cyrillic-700.woff") format("woff");
+
+  font-display: swap;
+}
+

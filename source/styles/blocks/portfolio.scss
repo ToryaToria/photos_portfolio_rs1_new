@@ -1,0 +1,34 @@
+.portfolio {
+  padding-top: 100px;
+  // padding-bottom: 20px;
+}
+.portfolio__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.portfolio__wrapper-tags {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 60px
+}
+
+.portfolio__list {
+  @include list-reset;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.portfolio__item {
+max-width: 450px;
+max-height: 560px;
+}
+
+.portfolio__img {
+  display: block;
+  width: 450px;
+  height: 560px;
+  object-fit: cover;
+}

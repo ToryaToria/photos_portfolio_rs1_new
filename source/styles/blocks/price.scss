@@ -1,0 +1,39 @@
+.price {
+   padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.price__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.price__list {
+    @include list-reset;
+
+display: flex;  
+gap: 25px;
+}
+
+.price__item {
+  box-sizing: border-box;
+  max-width: 450px;
+  padding: 43px 115px;
+  border: 3px solid $color-primary;
+  text-align: center;
+}
+
+.price__title {
+  margin-bottom: 20px;
+}
+
+.price__subtitle {
+margin-bottom: 20px;  
+}
+
+.price__list-features {
+  @include list-reset;
+  margin-bottom: 40px;  
+
+  
+}

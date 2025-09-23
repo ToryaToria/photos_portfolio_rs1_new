@@ -1,0 +1,32 @@
+.button {
+  box-sizing: border-box;
+  display: block;
+  padding: 8px 10px;
+  min-width: 220px;
+  background-color: $color-primary;
+  color: $color-black;
+  border: 2px solid $color-primary;
+  cursor: pointer;
+  transition: color 300ms ease-in-out 0s, opacity 300ms ease-in-out 0s;
+  // Почему не работает плавность для цвета в кнопке?
+
+  &--not-active {
+    background-color: transparent;
+    color: $color-primary;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &:focus-visible {
+    outline: auto;
+  }
+
+  &:hover {
+    color: $color-white;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,14 @@
+node_modules
+build
+assets
+backstop_data
+.idea
+.DS_Store
+raw/**/*.jpg
+raw/**/*.jpeg
+raw/**/*.png
+raw/**/*.svg
+!raw/**/README.md
+engine_scripts
+figma
+test-config

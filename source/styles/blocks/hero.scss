@@ -1,0 +1,22 @@
+.hero {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../images/hero/hero_bg-1x.webp");
+  min-height: 910px;
+}
+
+.hero__wrapper {
+  padding-top: 250px;
+  padding-left: 60px;
+  padding-bottom: 20px;
+  padding-right: 840px;
+}
+
+.hero__title {
+  margin-bottom: 10px;
+}
+
+.hero__text {
+  margin-bottom: 25px;
+}

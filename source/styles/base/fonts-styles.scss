@@ -1,0 +1,85 @@
+.text-nav {
+  @include font($size: 20px, $line-height: 50px);
+  text-decoration: none;
+}
+
+.title {
+  @include font-tittle($size: 60px, $color: $color-white);
+
+  @include media-tablet {
+    font-weight: 400;
+  }
+}
+
+.text-base {
+  @include font($size: 20px);
+}
+
+.text-btn {
+  @include font($size: 20px, $color: $color-black);
+  text-decoration: none;
+}
+
+.title-section {
+  @include font-tittle($size: 40px);
+
+  @include media-tablet {
+    font-size: 32px;
+  }
+}
+
+.title-section--line {
+  margin: 0 auto;
+  width: 700px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $color-primary;
+  }
+}
+
+.title-skills {
+  @include font($size: 20px, $weight: 600);
+}
+
+.text-mini {
+  @include font($size: 18px);
+
+  @include media-tablet {
+    line-height: 100%;
+  }
+}
+
+.text-tab {
+  @include font($size: 20px, $color: $color-primary);
+  text-decoration: none;
+}
+
+.title-price {
+  @include font-tittle($size: 28px, $color: $color-white);
+}
+
+.subtitle-price {
+  @include font-tittle($size: 24px, $color: $color-primary);
+}
+
+.text-field {
+  @include font($size: 20px, $color: $color-primary);
+}
+
+.text-footer {
+  @include font($size: 20px, $color: $color-white);
+  text-decoration: none;
+
+  @include media-tablet {
+    line-height: 100%;
+  }
+}
