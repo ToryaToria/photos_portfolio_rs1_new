@@ -1,26 +1,30 @@
 .price {
-   padding-top: 100px;
-  padding-bottom: 100px;
+   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .price__title {
-  text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 12px;
+}
+
+.price__text {
+  margin-bottom: 40px;
 }
 
 .price__list {
     @include list-reset;
 
 display: flex;  
-gap: 25px;
+gap: 24px;
 }
 
 .price__item {
   box-sizing: border-box;
-  max-width: 450px;
-  padding: 43px 115px;
-  border: 3px solid $color-primary;
-  text-align: center;
+  max-width: 320px;
+  padding: 24px;
+  border: 1px solid $color-primary;
+  display: flex;
+  flex-direction: column;
 }
 
 .price__title {
@@ -28,12 +32,19 @@ gap: 25px;
 }
 
 .price__subtitle {
-margin-bottom: 20px;  
+margin-bottom: 12px;  
 }
 
 .price__list-features {
   @include list-reset;
-  margin-bottom: 40px;  
+  margin-bottom: 12px;  
 
-  
-}
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+ }
+
+ .price__text-italic {
+  margin-bottom: 12px;
+  margin-top: auto;
+ }

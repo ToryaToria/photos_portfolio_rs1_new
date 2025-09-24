@@ -1,6 +1,6 @@
 .container {
   box-sizing: border-box;
-    max-width: $desktop-width;
+  max-width: $desktop-width;
 
   margin: 0 auto;
   padding-left: 20px;
@@ -8,11 +8,9 @@
 
   @include media-tablet {
     max-width: $tablet-width;
-    padding-left: 60px;
-    padding-right: 60px;
   }
 
-  // @include media-mobile {
-  //   min-width: $mobile-width;
-  // }
+  @include media-mobile {
+    min-width: $mobile-width;
+  }
 }

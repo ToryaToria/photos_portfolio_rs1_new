@@ -1,85 +1,59 @@
 .text-nav {
-  @include font($size: 20px, $line-height: 50px);
+  @include font-tittle($size: 16px, $line-height: 24px, $weight: 400);
   text-decoration: none;
 }
 
 .title {
-  @include font-tittle($size: 60px, $color: $color-white);
+  @include font-tittle($size: 116px, $line-height: 132px);
 
   @include media-tablet {
-    font-weight: 400;
+    font-size: 68px;
+    line-height: 80px;
+  }
+
+  @include media-mobile {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+.title-section {
+  @include font-tittle($size: 32px, $line-height: 40px, $weight: 400);
+}
+
+.subtitle {
+  @include font-tittle($size: 20px, $line-height: 28px, $weight: 400);
+}
+
+.text-decor {
+  @include font-tittle($size: 48px, $line-height: 54px, $weight: 500);
+
+  @include media-tablet {
+    font-weight: 300;
   }
 }
 
 .text-base {
-  @include font($size: 20px);
+  @include font($size: 16px, $line-height: 24px);
+
+  &--italic {
+    font-style: italic;
+  }
+
+  @include media-mobile {
+    font-weight: 400px;
+  }
+}
+
+.text-small {
+  @include font($size: 12px, $line-height: 16px);
 }
 
 .text-btn {
-  @include font($size: 20px, $color: $color-black);
+  @include font-tittle($size: 16px, $line-height: 24px, $weight: 400);
   text-decoration: none;
 }
 
-.title-section {
-  @include font-tittle($size: 40px);
-
-  @include media-tablet {
-    font-size: 32px;
+.txt-dark {
+color: $color-primary;
   }
-}
-
-.title-section--line {
-  margin: 0 auto;
-  width: 700px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: $color-primary;
-  }
-}
-
-.title-skills {
-  @include font($size: 20px, $weight: 600);
-}
-
-.text-mini {
-  @include font($size: 18px);
-
-  @include media-tablet {
-    line-height: 100%;
-  }
-}
-
-.text-tab {
-  @include font($size: 20px, $color: $color-primary);
-  text-decoration: none;
-}
-
-.title-price {
-  @include font-tittle($size: 28px, $color: $color-white);
-}
-
-.subtitle-price {
-  @include font-tittle($size: 24px, $color: $color-primary);
-}
-
-.text-field {
-  @include font($size: 20px, $color: $color-primary);
-}
-
-.text-footer {
-  @include font($size: 20px, $color: $color-white);
-  text-decoration: none;
-
-  @include media-tablet {
-    line-height: 100%;
-  }
-}

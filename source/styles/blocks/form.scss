@@ -1,18 +1,20 @@
 .form {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  gap: 8px;
+  justify-content: center;
 }
 
 .form__filed {
-  padding: 5px 20px 5px;
+  width: 380px;
+  box-sizing: border-box;
+  padding: 18px 12px;
   background-color: transparent;
-  border: 2px solid $color-primary;
+  border: 1px solid $color-primary;
 
   transition: background-color 300ms ease-in-out 0s;
 
   &::placeholder {
-    @include font($size: 20px, $color: $color-primary);
+  @include font-tittle($size: 16px, $line-height: 24px, $weight: 400, $color: $color-plaseholder);
   }
 
   &:focus {
@@ -23,7 +25,11 @@
   }
 
   &:hover {
-    outline: 3px solid $color-primary;
+    outline: 1px solid $color-primary;
     color: $color-white;
   }
+}
+
+.form__button {
+  width: 200px;
 }

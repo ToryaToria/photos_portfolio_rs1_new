@@ -1,0 +1,31 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: $color-primary;
+}
+
+.about__container {
+  columns: auto 3;
+  column-gap: 40px;
+  column-fill: balance;
+
+  min-height: 628px;
+
+  background-color: aliceblue;
+}
+
+.about__img {
+  display: block;
+  background-color: antiquewhite;
+  width: 440px;
+  height: 440px;
+  margin-bottom: 40px;
+}
+
+.about__title {
+margin-bottom: 12px;
+}
+
+.about__text  {
+  margin-bottom: 40px;
+}

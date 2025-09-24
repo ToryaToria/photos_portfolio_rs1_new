@@ -1,10 +1,10 @@
 .button {
   box-sizing: border-box;
   display: block;
-  padding: 8px 10px;
-  min-width: 220px;
+  padding: 18px 20px;
+  // min-width: 220px;
   background-color: $color-primary;
-  color: $color-black;
+  // color: $color-black;
   border: 2px solid $color-primary;
   cursor: pointer;
   transition: color 300ms ease-in-out 0s, opacity 300ms ease-in-out 0s;
