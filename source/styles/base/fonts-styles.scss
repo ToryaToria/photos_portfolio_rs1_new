@@ -26,8 +26,8 @@
 }
 
 .text-decor {
-  @include font-tittle($size: 48px, $line-height: 54px, $weight: 500);
-
+  @include font-tittle($size: 48px, $line-height: 54px);
+margin-bottom: 8px;
   @include media-tablet {
     font-weight: 300;
   }

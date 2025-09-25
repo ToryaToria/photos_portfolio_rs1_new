@@ -10,6 +10,11 @@
   justify-content: space-between;
 }
 
+.faq__title {
+  margin-bottom: 12px;
+  
+}
+
 .faq__wrapper {
   max-width: 680px;
   min-width: 680px;
@@ -20,7 +25,7 @@
 }
 
 .faq__question {
-  padding: 18px 44px 18px 0;
+  padding: 18px 44px 18px 0; //  МОЖЕТ БЫТЬ СВЕРХУ 0 СНИЗУ 15px
   cursor: pointer;
 
   transition: color 300ms ease-in-out 0s, opacity 300ms ease-in-out 0s;

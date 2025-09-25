@@ -1,5 +1,5 @@
 .portfolio {
-  padding-top: 60px;
+  padding-top: 59px;
   padding-bottom: 60px;
   background-color: $color-primary;
 }
@@ -9,6 +9,7 @@
 
 .portfolio__text {
   margin-bottom: 40px;
+  max-width: 360px;
 }
 
 .portfolio__slider {
@@ -22,6 +23,7 @@
   // flex-wrap: wrap;
   // align-items: center;
   // justify-content: center;
+  height: 654px;
 }
 
 .portfolio__item {

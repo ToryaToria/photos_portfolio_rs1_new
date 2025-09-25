@@ -1,10 +1,10 @@
 .price {
-   padding-top: 60px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .price__title {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .price__text {
@@ -12,39 +12,40 @@
 }
 
 .price__list {
-    @include list-reset;
+  @include list-reset;
 
-display: flex;  
-gap: 24px;
+  display: flex;
+  gap: 40px;
 }
 
 .price__item {
   box-sizing: border-box;
   max-width: 320px;
-  padding: 24px;
+  min-width: 320px;
+  // width: 320px;
+
+  height: 500px; //УБРАТЬ!!!
+
+  padding: 23px 24px 24px 23px;
   border: 1px solid $color-primary;
   display: flex;
   flex-direction: column;
 }
 
-.price__title {
-  margin-bottom: 20px;
-}
-
 .price__subtitle {
-margin-bottom: 12px;  
+  margin-bottom: 12px;
 }
 
 .price__list-features {
   @include list-reset;
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
 
   display: flex;
   flex-direction: column;
   gap: 4px;
- }
+}
 
- .price__text-italic {
+.price__text-italic {
   margin-bottom: 12px;
   margin-top: auto;
- }
+}
