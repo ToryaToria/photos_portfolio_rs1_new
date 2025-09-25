@@ -5,9 +5,11 @@
   // min-width: 220px;
   background-color: $color-primary;
   // color: $color-black;
-  border: 2px solid $color-primary;
+  border: none;
   cursor: pointer;
-  transition: color 300ms ease-in-out 0s, opacity 300ms ease-in-out 0s;
+  // transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, opacity 300ms ease-in-out 0s;
+
+  transition: all 300ms ease-in-out 0s;
   // Почему не работает плавность для цвета в кнопке?
 
   &--not-active {
@@ -23,10 +25,11 @@
   }
 
   &:hover {
-    color: $color-white;
+    color: $color-primary;
+    background-color: $color-hover;
   }
 
   &:active {
-    opacity: 0.8;
+    opacity: 0.5;
   }
 }

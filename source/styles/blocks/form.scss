@@ -14,7 +14,12 @@
   transition: background-color 300ms ease-in-out 0s;
 
   &::placeholder {
-  @include font-tittle($size: 16px, $line-height: 24px, $weight: 400, $color: $color-plaseholder);
+    @include font-tittle(
+      $size: 16px,
+      $line-height: 24px,
+      $weight: 400,
+      $color: $color-plaseholder
+    );
   }
 
   &:focus {
@@ -25,8 +30,8 @@
   }
 
   &:hover {
-    outline: 1px solid $color-primary;
-    color: $color-white;
+    outline: none;
+    border: 1px solid $color-hover;
   }
 }
 

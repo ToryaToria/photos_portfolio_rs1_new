@@ -11,8 +11,39 @@
 .hero__running-title {
   display: flex;
   justify-content: space-between;
-  width: 60px;
-  background-color: rgb(132, 133, 134);
+  gap: 12px;
+  // width: 60px;
+  // background-color: rgb(132, 133, 134);
+align-items: center;
+  writing-mode: sideways-lr;
+
+  // writing-mode: vertical-lr;
+  // transform: rotate(180deg);
+}
+
+.hero__year-- {
+  display: flex;
+  gap: 12px;
+  flex-grow: 1;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: auto;
+    background-color: aqua;
+    transform: rotate(90deg);
+    flex-grow: 1;
+  }
+}
+
+.hero__line {
+   width: 1px;
+    height: auto;
+    background-color: $color-white;
+        // transform: rotate(90deg);
+        flex-grow: 1;
+
 }
 
 .hero__wrapper {
@@ -41,11 +72,14 @@
   margin-bottom: 160px;
 }
 
-.hero__button {
+.hero__down {
   @include btn-reset;
   cursor: pointer;
   display: flex;
   gap: 8px;
+
+  text-decoration: none;
+  transition: all 300ms ease-in-out 0s;
 
   &::after {
     content: "";
@@ -58,6 +92,28 @@
     mask-repeat: no-repeat;
     mask-position: center;
     mask-image: url("../../icons/arrow-down.svg");
+
+    transition: all 300ms ease-in-out 0s;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: auto;
+  }
+
+  &:hover {
+    color: $color-hover;
+
+    &::after {
+      background-color: $color-hover;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
 

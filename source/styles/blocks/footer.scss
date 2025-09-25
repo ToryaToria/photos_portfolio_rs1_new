@@ -16,10 +16,26 @@
 }
 
 .footer__social-item {
-padding: 18px 20px;
+  padding: 18px 20px;
 }
 
 .footer__social-link {
   display: block;
- 
+
+  transition: color 300ms ease-in-out 0s, opacity 300ms ease-in-out 0s;
+
+  &:focus {
+    outline: none;
+  }
+  &:focus-visible {
+    outline: auto;
+  }
+
+  &:hover {
+    color: $color-hover;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
