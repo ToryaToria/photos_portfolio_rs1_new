@@ -20,32 +20,54 @@
 
 .price__item {
   box-sizing: border-box;
-  max-width: 320px;
+  // max-width: 320px;
   min-width: 320px;
   // width: 320px;
 
-  height: 500px; //УБРАТЬ!!!
+  min-height: 500px; //УБРАТЬ!!!
 
   padding: 23px 24px 24px 23px;
   border: 1px solid $color-primary;
   display: flex;
   flex-direction: column;
+
 }
 
 .price__subtitle {
   margin-bottom: 12px;
 }
 
-.price__list-features {
+.price__features-list {
   @include list-reset;
   margin-bottom: 12px;
 
   display: flex;
   flex-direction: column;
   gap: 4px;
+
+  li {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: $color-black;
+  }
+}
+
+.price__cost {
+margin-bottom: auto;
 }
 
 .price__text-italic {
   margin-bottom: 12px;
-  margin-top: auto;
+}
+
+.price:has(.price__button:hover) .price__item,
+.price:has(.price__button:focus) .price__item {
+  border-color: $color-hover;
 }

@@ -27,7 +27,7 @@
 
 .text-decor {
   @include font-tittle($size: 48px, $line-height: 54px);
-margin-bottom: 8px;
+  margin-bottom: 8px;
   @include media-tablet {
     font-weight: 300;
   }
@@ -38,6 +38,7 @@ margin-bottom: 8px;
 
   &--italic {
     font-style: italic;
+    line-height: 20px;
   }
 
   @include media-mobile {
@@ -55,5 +56,5 @@ margin-bottom: 8px;
 }
 
 .txt-dark {
-color: $color-primary;
-  }
+  color: $color-primary;
+}

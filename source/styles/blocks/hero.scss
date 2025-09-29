@@ -1,6 +1,6 @@
 .hero {
   background-color: $color-primary;
-    padding-top: 60px;
+  padding-top: 60px;
 
   padding-bottom: 60px;
 }
@@ -15,36 +15,18 @@
   justify-content: space-between;
   gap: 12px;
   margin-left: -10px;
-align-items: center;
+  align-items: center;
   writing-mode: sideways-lr;
 
   // writing-mode: vertical-lr;
   // transform: rotate(180deg);
 }
 
-.hero__year-- {
-  display: flex;
-  gap: 12px;
-  flex-grow: 1;
-
-  &::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: auto;
-    background-color: aqua;
-    transform: rotate(90deg);
-    flex-grow: 1;
-  }
-}
-
 .hero__line {
-   width: 1px;
-    height: auto;
-    background-color: $color-white;
-        // transform: rotate(90deg);
-        flex-grow: 1;
-
+  width: 1px;
+  height: auto;
+  background-color: $color-white;
+  flex-grow: 1;
 }
 
 .hero__wrapper {
@@ -61,8 +43,14 @@ align-items: center;
 .hero__property {
   @include list-reset;
   display: flex;
-  gap: 60px;
+  gap: 85px;
   margin-bottom: 40px;
+  margin-left: 28px;
+
+   li::marker {
+    content: '+ ';
+  @include font-tittle($size: 48px, $line-height: 54px);
+   }
 }
 
 .hero__title {

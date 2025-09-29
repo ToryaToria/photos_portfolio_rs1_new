@@ -6,17 +6,14 @@
 
 .about__container {
   columns: auto 3;
-  column-gap: 40px;
-  column-fill: balance;
+  column-gap: 39px;
+  // column-fill: balance;
 
-  height: 628px;
-
-  background-color: rgb(76, 166, 245);
+  // height: 628px;
 }
 
 .about__img {
   display: block;
-  background-color: antiquewhite;
   width: 440px;
   height: 440px;
   margin-bottom: 40px;
@@ -26,6 +23,12 @@
 margin-bottom: 12px;
 }
 
-.about__text  {
+.about__text-1 {
+    break-inside: avoid;
+
+}
+
+.about__text-2  {
   margin-bottom: 40px;
+  // break-before: column;
 }

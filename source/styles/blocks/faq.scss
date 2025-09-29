@@ -12,7 +12,6 @@
 
 .faq__title {
   margin-bottom: 12px;
-  
 }
 
 .faq__wrapper {
@@ -21,14 +20,32 @@
 }
 
 .faq__faq {
+  box-sizing: border-box;
   border-bottom: 1px solid $color-white;
 }
 
 .faq__question {
-  padding: 18px 44px 18px 0; //  МОЖЕТ БЫТЬ СВЕРХУ 0 СНИЗУ 15px
+  list-style: none;
+  padding: 18px 0 17px 0;
   cursor: pointer;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   transition: color 300ms ease-in-out 0s, opacity 300ms ease-in-out 0s;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-color: $color-white;
+    mask-size: 15.5px;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-image: url("../../icons/plus.svg");
+  }
 
   &:focus {
     outline: none;
@@ -39,13 +56,27 @@
 
   &:hover {
     color: $color-hover;
+
+    &::after {
+      background-color: $color-hover;
+    }
   }
 
   &:active {
     opacity: 0.5;
+    &::after {
+      opacity: 0.5;
+    }
+  }
+}
+
+.faq__faq[open] > .faq__question {
+  &::after {
+    mask-size: 15.5px 2px;
+    mask-image: url("../../icons/minus.svg");
   }
 }
 
 .faq__answer {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }

@@ -32,11 +32,11 @@
   text-transform: $upper;
 }
 
-@mixin list-reset($padd-left: 0) {
+@mixin list-reset($padd-left: 0, $style: none) {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: $padd-left;
-  list-style: none;
+  list-style: $style;
 }
 
 @mixin btn-reset {
