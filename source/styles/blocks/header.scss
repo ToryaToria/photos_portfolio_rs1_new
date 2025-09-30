@@ -1,10 +1,9 @@
-
 .header {
   background-color: $color-primary;
 }
 
 .header__container {
-    padding: 0;
+  padding: 0;
 
   display: flex;
   align-items: center;
@@ -18,9 +17,43 @@
   padding: 20px 20px 20px;
 }
 
+.header__burger {
+  @include btn-reset;
+  display: none;
+  width: 60px;
+  height: 60px;
+
+  cursor: pointer;
+  background-color: $color-white;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 20px;
+  mask-image: url("../../icons/burger_open.svg");
+
+  &--closer {
+    mask-image: url("../../icons/burger_closer.svg");
+  }
+  &:focus,
+  &:hover {
+    background-color: $color-hover;
+    outline: auto;
+  }
+
+  @include media-tablet {
+    display: block;
+  }
+}
+
+.header__nav {
+  @include media-tablet {
+    display: none;
+  }
+}
+
 .header__list {
   @include list-reset;
-    display: flex;
+  display: flex;
 }
 
 .header__link {

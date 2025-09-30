@@ -32,6 +32,10 @@
 .hero__wrapper {
   display: flex;
   gap: 40px;
+
+  @include media-tablet {
+    gap: 20px;
+  }
 }
 
 .hero__inner1 {
@@ -47,10 +51,10 @@
   margin-bottom: 40px;
   margin-left: 28px;
 
-   li::marker {
-    content: '+ ';
-  @include font-tittle($size: 48px, $line-height: 54px);
-   }
+  li::marker {
+    content: "+ ";
+    @include font-tittle($size: 48px, $line-height: 54px);
+  }
 }
 
 .hero__title {
@@ -114,6 +118,10 @@
 .hero__inner2 {
   display: flex;
   align-items: center;
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .hero__inner3 {
@@ -129,5 +137,16 @@
     margin-top: auto;
     padding-left: 60px;
     text-align: right;
+
+    @include media-tablet {
+      padding-left: 0;
+    }
+  }
+
+  @include media-tablet {
+    .hero__img {
+      width: 220px;
+      height: 294px;
+    }
   }
 }

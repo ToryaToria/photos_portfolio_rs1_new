@@ -10,6 +10,11 @@
   // column-fill: balance;
 
   // height: 628px;
+
+  @include media-tablet {
+    columns: unset;
+    column-gap: 0;
+  }
 }
 
 .about__img {
@@ -17,18 +22,29 @@
   width: 440px;
   height: 440px;
   margin-bottom: 40px;
+
+  @include media-tablet {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &--3 {
+      display: none;
+    }
+  }
 }
 
 .about__title {
-margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .about__text-1 {
-    break-inside: avoid;
-
+  break-inside: avoid;
+@include media-tablet {
+ 
+      margin-bottom: 40px;
+    }
 }
 
-.about__text-2  {
+.about__text-2 {
   margin-bottom: 40px;
-  // break-before: column;
 }

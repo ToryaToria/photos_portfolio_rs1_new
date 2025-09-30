@@ -8,6 +8,10 @@
   display: flex;
   gap: 40px;
   justify-content: space-between;
+
+  @include media-tablet {
+    flex-direction: column;
+  }
 }
 
 .faq__title {
@@ -17,6 +21,11 @@
 .faq__wrapper {
   max-width: 680px;
   min-width: 680px;
+
+    @include media-tablet {
+     max-width: 728px;
+  min-width: 728px;
+    }
 }
 
 .faq__faq {

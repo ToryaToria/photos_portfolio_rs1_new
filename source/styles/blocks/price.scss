@@ -16,11 +16,17 @@
 
   display: flex;
   gap: 40px;
+
+  @include media-tablet {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
 }
 
 .price__item {
   box-sizing: border-box;
-  // max-width: 320px;
+  max-width: 320px;
   min-width: 320px;
   // width: 320px;
 
@@ -30,7 +36,6 @@
   border: 1px solid $color-primary;
   display: flex;
   flex-direction: column;
-
 }
 
 .price__subtitle {
@@ -60,7 +65,7 @@
 }
 
 .price__cost {
-margin-bottom: auto;
+  margin-bottom: auto;
 }
 
 .price__text-italic {
