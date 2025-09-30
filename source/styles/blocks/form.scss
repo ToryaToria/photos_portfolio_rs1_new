@@ -3,9 +3,13 @@
   gap: 8px;
   justify-content: center;
 
-   @include media-mobile {
-flex-direction: column;
-     }
+ @media (max-width: 670px) {
+    flex-wrap: wrap;
+ }
+
+  @include media-mobile {
+    flex-direction: column;
+  }
 }
 
 .form__filed {
@@ -44,9 +48,13 @@ flex-direction: column;
     width: clamp(auto, 256px, 256px);
   }
 
-   @include media-mobile {
+   @media (max-width: 670px) {
     width: auto;
-     }
+ }
+
+  @include media-mobile {
+    width: auto;
+  }
 }
 
 .form__button {
@@ -58,5 +66,5 @@ flex-direction: column;
 
   @include media-mobile {
     width: auto;
-     }
+  }
 }

@@ -19,8 +19,8 @@
 
 .about__img {
   display: block;
-  width: 440px;
-  height: 440px;
+  width: 100%;
+  height: auto;
   margin-bottom: 40px;
 
   @include media-tablet {
@@ -39,10 +39,10 @@
 
 .about__text-1 {
   break-inside: avoid;
-@include media-tablet {
- 
-      margin-bottom: 40px;
-    }
+
+  @include media-tablet {
+    margin-bottom: 40px;
+  }
 }
 
 .about__text-2 {

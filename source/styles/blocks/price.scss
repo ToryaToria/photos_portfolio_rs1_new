@@ -17,6 +17,10 @@
   display: flex;
   gap: 40px;
 
+ @media (max-width: 1400px) {
+      flex-wrap: wrap;
+      justify-content: center;
+ }
   @include media-tablet {
     flex-wrap: wrap;
     gap: 20px;
@@ -27,7 +31,7 @@
 .price__item {
   box-sizing: border-box;
   max-width: 320px;
-  min-width: 320px;
+  // min-width: 320px;
   // width: 320px;
 
   min-height: 500px; //УБРАТЬ!!!
