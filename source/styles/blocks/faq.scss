@@ -22,10 +22,10 @@
   max-width: 680px;
   min-width: 680px;
 
-    @include media-tablet {
-     max-width: 728px;
-  min-width: 728px;
-    }
+  @include media-tablet {
+    max-width: 100%;
+    min-width: auto;
+  }
 }
 
 .faq__faq {
