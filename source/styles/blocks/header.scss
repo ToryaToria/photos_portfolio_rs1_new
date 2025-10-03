@@ -1,5 +1,7 @@
 .header {
   background-color: $color-primary;
+  position: relative;
+  z-index: 10;
 }
 
 .header__container {
@@ -19,44 +21,97 @@
 
 .header__burger {
   @include btn-reset;
+  box-sizing: border-box;
   display: none;
   width: 60px;
   height: 60px;
+  padding: 20px;
 
-  cursor: pointer;
-  background-color: $color-white;
-
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: 20px;
-  mask-image: url("../../icons/burger_open.svg");
-
-  &--closer {
-    mask-image: url("../../icons/burger_closer.svg");
-  }
-  &:focus,
-  &:hover {
-    background-color: $color-hover;
+  &:focus-visible {
+    // background-color: $color-hover;
     outline: auto;
   }
 
   @include media-tablet {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: end;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &--closer {
+    .header__burger-line {
+      width: 20px;
+      transform: rotate(45deg);
+    }
+    .header__burger-line--2 {
+      transform: translateY(-8px) rotate(-45deg);
+    }
   }
 }
 
+.header__burger-line {
+  width: 12px;
+  height: 2px;
+  background-color: $color-white;
+  display: block;
+  font-size: 0;
+  background-color: $color-white;
+  transition: 0.5s;
+}
+
+.header__burger-line--2 {
+  width: 20px;
+}
+
 .header__nav {
+  box-sizing: border-box;
+
   @include media-tablet {
-    display: none;
+    position: absolute;
+    // display: none;
+    background-color: $color-primary;
+    width: 100%;
+    top: 60px;
+    right: -768px;
+
+    z-index: 0;
+    transition: 0.5s;
+  }
+
+  // @include media-mobile {
+  //   width: 420px;
+  //   right: -420px;
+  //   padding: 35px;
+  //   padding-bottom: 24px;
+  //   top: 90px;
+  // }
+}
+
+.header__nav--open {
+  @include media-tablet {
+    // display: block;
+    right: 0;
+    z-index: 10;
   }
 }
 
 .header__list {
   @include list-reset;
   display: flex;
+
+  @include media-tablet {
+    margin-top: 220px;
+    margin-bottom: 220px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .header__link {
+  display: block;
   padding: 18px 20px;
   transition: color 300ms ease-in-out 0s, opacity 300ms ease-in-out 0s;
 
