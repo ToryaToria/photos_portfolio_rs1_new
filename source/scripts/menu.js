@@ -1,5 +1,4 @@
-console.log('hi! hi!');
-
+// console.log('hi! hi!');
 
 const btnMenu = document.querySelector('.header__burger');
 const body = document.body;

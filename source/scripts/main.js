@@ -1,4 +1,4 @@
-console.log('hi!');
+// console.log('hi!');
 // let a +=10;
 
 //  let i = 0; 
