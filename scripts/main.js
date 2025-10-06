@@ -1,1 +1,1 @@
-console.log("hi!");console.log(typeof Symbol("JS"));
+console.log(typeof Symbol("JS"));
