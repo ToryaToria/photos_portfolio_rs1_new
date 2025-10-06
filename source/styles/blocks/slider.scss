@@ -1,0 +1,19 @@
+#slider-left,
+#slider-right {
+  display: block;
+  position: absolute;
+
+  @include btn-reset;
+  width: 30%;
+  height: 654px;
+  z-index: 20;
+  background-color: transparent;
+}
+
+#slider-left {
+  left: 0;
+}
+
+#slider-right {
+  right: 0;
+}
